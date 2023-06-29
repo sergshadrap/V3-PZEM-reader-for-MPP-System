@@ -9,3 +9,4 @@ By default I use Wemos D1 mini + Pzem module. This implementation uses SoftwareS
 "Period"- how often the ESP will report to AM server (max 1 sec).
  "Reset Energy" - once set to true will reset accumulated energy value.
  Since started the device will arrange four analog devices - voltage, current,power ,energy ( I decided not to create PF and Freq , if someone need it , I can add).
+This versiom doesn't use any libraries. All libraries had presented in the internet badly interracted with serial port , blocking whole device for long time, becuase of that the AM server periodically reported lost connections and timeouts. My implementation uses different algorithm .
