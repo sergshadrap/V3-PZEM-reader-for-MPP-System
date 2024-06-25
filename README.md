@@ -11,3 +11,4 @@ By default I use Wemos D1 mini + Pzem module. This implementation uses SoftwareS
  Since started the device will arrange four analog devices - voltage, current,power ,energy ( I decided not to create PF and Freq , if someone need it , I can add).
 This versiom doesn't use any libraries. All libraries had presented in the internet badly interracted with serial port , blocking whole device for long time, becuase of that the AM server periodically reported lost connections and timeouts. My implementation uses different algorithm .
  
+      Important note: The current clamp is on Load wire ( that might be not clear form the picture).
